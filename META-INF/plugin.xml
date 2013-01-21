@@ -1,0 +1,31 @@
+<idea-plugin version="2">
+    <id>org.jetbrains.addActivity</id>
+
+    <name>AddActivity</name>
+    <description>Adds Activity package with classes in it</description>
+    <version>1.0</version>
+    <vendor email="javasparx@gmail.com">Sparx</vendor>
+
+    <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="107.105"/>
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+
+        <action id="addActivity" class="org.jetbrains.addActivity.AddActivityAction" text="AddAtivity..." description="....">
+            <add-to-group group-id="NewGroup" anchor="last"/>
+        </action>
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+</idea-plugin>
